@@ -15,6 +15,7 @@ public class MyFirstScript : MonoBehaviour
 
     private const int RepetitionCount = 2;
     private int _jumpCount = 0;
+
     void Start()
     {
         // Zmienna lokalna istnieje tylko w obrębie tej metody.
@@ -70,8 +71,9 @@ public class MyFirstScript : MonoBehaviour
         // damage jest dostępne tylko wewnątrz tej metody.
         Debug.Log($"Damage: {damage}");
     }
+}
 
-    // ============================================================
+// ============================================================
     // KOMENTARZE
     // ============================================================
     // Komentarz powinien wyjaśniać przede wszystkim:
