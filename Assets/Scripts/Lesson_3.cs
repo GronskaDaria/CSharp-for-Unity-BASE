@@ -14,7 +14,7 @@ public class Lesson3 : MonoBehaviour
     // ============================================================
 
     private const int RepetitionCount = 2;
-    private int _jumpCount = 0;
+    private int _jumpCount = 1;
 
     void Start()
     {
@@ -25,6 +25,12 @@ public class Lesson3 : MonoBehaviour
         {
             Jump();
         }
+        
+        if(totalJumps > 2) 
+        {
+            TakeDamage(totalJumps);
+        }
+        
     }
 // ============================================================
     // METODY
