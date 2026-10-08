@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MyFirstScript : MonoBehaviour
+public class Lesson3 : MonoBehaviour
 {
     // ============================================================
     // ZMIENNE

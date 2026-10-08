@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MyFirstScript : MonoBehaviour
+public class Lesson2 : MonoBehaviour
 {
     private bool _isCatAlive = true;
     private float _catAge = 0.7f;

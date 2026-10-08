@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MyFirstScript : MonoBehaviour
+public class Lesson1 : MonoBehaviour
 {
     /* C# — podstawowe typy zmiennych
      int — liczby całkowite, np. 5, 100, -3.
