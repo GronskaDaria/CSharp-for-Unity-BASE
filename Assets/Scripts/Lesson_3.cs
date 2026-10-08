@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MyFirstScript : MonoBehaviour
+public class Lesson3 : MonoBehaviour
 {
     // ============================================================
     // ZMIENNE
@@ -14,7 +14,7 @@ public class MyFirstScript : MonoBehaviour
     // ============================================================
 
     private const int RepetitionCount = 2;
-    private int _jumpCount = 0;
+    private int _jumpCount = 1;
 
     void Start()
     {
@@ -25,6 +25,12 @@ public class MyFirstScript : MonoBehaviour
         {
             Jump();
         }
+        
+        if(totalJumps > 2) 
+        {
+            TakeDamage(totalJumps);
+        }
+        
     }
 // ============================================================
     // METODY

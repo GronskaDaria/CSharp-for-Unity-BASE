@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MyFirstScript : MonoBehaviour
+public class Lesson2 : MonoBehaviour
 {
     private bool _isCatAlive = true;
     private float _catAge = 0.7f;
@@ -21,7 +21,7 @@ public class MyFirstScript : MonoBehaviour
 
         if (_isCatAlive && _catAge < 0.6f)
         {
-            Debug.Log("It is a little kitty");
+            Debug.Log("It is a little kitty. It's name is"+ _catName);
         }
         else if (_isCatAlive && _catAge < 1f)
         {
