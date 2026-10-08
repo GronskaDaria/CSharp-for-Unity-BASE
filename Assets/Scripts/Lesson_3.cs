@@ -50,6 +50,7 @@ public class MyFirstScript : MonoBehaviour
         Debug.Log("Jump");
     }
 
+
     // Metoda zwracająca wartość typu int.
     // return przekazuje wynik do miejsca wywołania.
     private int GetDoubleRepetitionCount()
@@ -78,6 +79,6 @@ public class MyFirstScript : MonoBehaviour
     // ============================================================
     // Komentarz powinien wyjaśniać przede wszystkim:
     // "DLACZEGO?", a nie "CO ROBI KOD".
-    // komentarze zostawiamy dla siebie nie pushu-emy na gotowy produkt
+    // komentarze zostawiamy dla siebie nie push-emy na gotowy produkt
     // =============================================================
 
