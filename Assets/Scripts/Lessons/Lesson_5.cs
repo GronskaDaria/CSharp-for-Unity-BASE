@@ -55,8 +55,8 @@ public class Lesson5 : MonoBehaviour
     // Przykładowo pola static i właściwości nie są
     // serializowane przez standardowy system Unity.
 
-    [SerializeField] private int _a = 10;
-    [SerializeField] private int _b = 20;
+    /*[SerializeField] private int _a = 10;
+    [SerializeField] private int _b = 20;*/
 
     // Pojedyncza instancja klasy BaseClass.
     [SerializeField] private BaseClass _character;

@@ -774,8 +774,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: C# for Unity Base
-  metroPackageVersion: 
+  metroPackageName: CforUnityBase
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -783,7 +783,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: C# for Unity Base
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: C# for Unity Base
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -851,7 +851,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 2fef41ea-117a-4918-94e5-0f5bc937014f
   framebufferDepthMemorylessMode: 0
