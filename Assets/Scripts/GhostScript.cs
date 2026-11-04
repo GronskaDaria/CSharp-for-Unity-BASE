@@ -36,7 +36,7 @@ namespace GhostGame
         {
             _anim = this.GetComponent<Animator>();
             _ctrl = this.GetComponent<CharacterController>();
-            _hpText.text = "HP " + _hp.ToString();
+   //         _hpText.text = "HP " + _hp.ToString();
         }
 
         void Update()
