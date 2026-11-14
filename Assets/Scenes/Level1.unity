@@ -667,6 +667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -795,6 +799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -861,6 +869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -925,6 +937,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -1055,6 +1071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1069,26 +1089,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7248642375954117489, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
   m_PrefabInstance: {fileID: 51993679}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &54260284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
-  m_PrefabInstance: {fileID: 1615596970}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &54260289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54260284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f57bdc949fce340f8968c5bc86276031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meshR:
-  - {fileID: 1967389198}
-  speed: 4
 --- !u!1001 &56940413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1139,6 +1139,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -1455,6 +1459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1643,6 +1651,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -2145,6 +2157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2457,6 +2473,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -2897,6 +2917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3335,6 +3359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3523,6 +3551,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -3901,6 +3933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4215,6 +4251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4279,6 +4319,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -5486,6 +5530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5552,6 +5600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5616,6 +5668,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -6156,6 +6212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6220,6 +6280,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -6410,6 +6474,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -6662,6 +6730,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -7226,6 +7298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -7478,6 +7554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -7542,6 +7622,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -7732,6 +7816,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -7984,6 +8072,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -8796,6 +8888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -8984,6 +9080,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -9176,6 +9276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -9240,6 +9344,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -9368,6 +9476,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -9808,6 +9920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -9934,6 +10050,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -10312,6 +10432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10376,6 +10500,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -10504,6 +10632,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -11068,6 +11200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -11196,6 +11332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -11260,6 +11400,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -11388,6 +11532,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -12386,6 +12534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12514,6 +12666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12578,6 +12734,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -12646,6 +12806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12710,6 +12874,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -12838,6 +13006,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -13154,6 +13326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13406,6 +13582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13430,6 +13610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -13517,6 +13698,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &709705535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14462,6 +14666,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -15522,6 +15730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -15586,6 +15798,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -15714,6 +15930,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -16154,6 +16374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -16280,6 +16504,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -16534,6 +16762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -16784,6 +17016,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -17162,6 +17398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -17350,6 +17590,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -17542,6 +17786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -17668,6 +17916,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -18354,6 +18606,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -19084,6 +19340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -19272,6 +19532,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -19650,6 +19914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -19840,6 +20108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -19904,6 +20176,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -20654,6 +20930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -20981,6 +21261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -21293,6 +21577,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -21609,6 +21897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -21797,6 +22089,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -22312,6 +22608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -22438,6 +22738,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -22754,6 +23058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -22818,6 +23126,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -23008,6 +23320,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -23696,6 +24012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -24010,6 +24330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -24262,6 +24586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -24328,6 +24656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -24379,9 +24711,9 @@ Transform:
   - {fileID: 828491444}
   - {fileID: 1977032425}
   - {fileID: 1962080972}
-  - {fileID: 38868995}
   - {fileID: 378430388}
   - {fileID: 205518193}
+  - {fileID: 38868995}
   - {fileID: 176745556}
   - {fileID: 1179008902}
   - {fileID: 824922232}
@@ -24559,6 +24891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -24685,6 +25021,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -25284,6 +25624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -25412,6 +25756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -25476,6 +25824,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -25916,6 +26268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -26104,6 +26460,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -26542,6 +26902,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -27117,6 +27481,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -27743,6 +28111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -27871,6 +28243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -27935,6 +28311,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -28127,6 +28507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -28253,6 +28637,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -28817,6 +29205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -29005,6 +29397,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -29443,6 +29839,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -30069,6 +30469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -30259,6 +30663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -30323,6 +30731,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -30489,6 +30901,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -30681,6 +31097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -30769,6 +31189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
+      propertyPath: m_TagString
+      value: Ghost
+      objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.51
@@ -30809,14 +31233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4524755726158905661, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 54260289}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
 --- !u!1001 &1616414712
 PrefabInstance:
@@ -32172,6 +32592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32424,6 +32848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -32550,6 +32978,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -32888,6 +33320,7 @@ GameObject:
   - component: {fileID: 1732589201}
   - component: {fileID: 1732589200}
   - component: {fileID: 1732589199}
+  - component: {fileID: 1732589203}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -32979,6 +33412,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1732589203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732589198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215a27678984b78428f6d890ab9295e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsText: {fileID: 996776880}
+  livesText: {fileID: 1979869794}
 --- !u!1001 &1736284870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33527,6 +33974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -33655,6 +34106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -33721,6 +34176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -33785,6 +34244,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -34473,6 +34936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -34537,6 +35004,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -34605,6 +35076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -34669,6 +35144,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -34921,6 +35400,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -36105,6 +36588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -36481,6 +36968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -36556,11 +37047,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1054002407987483992, guid: c122b8e20cd715e4493e9462e7bdec85, type: 3}
   m_PrefabInstance: {fileID: 1963494428}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &1967389198 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 839705036205447455, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
-  m_PrefabInstance: {fileID: 1615596970}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1969130476
 PrefabInstance:
@@ -36736,6 +37222,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -37062,6 +37552,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -37440,6 +37934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -37504,6 +38002,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -38316,6 +38818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -38754,6 +39260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -39068,6 +39578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -39196,6 +39710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -39262,6 +39780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -39326,6 +39848,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -39518,6 +40044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -39646,6 +40176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -39710,6 +40244,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -39964,6 +40502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava
       objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -40090,6 +40632,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
@@ -40528,6 +41074,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
       propertyPath: m_Name
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057935317927651787, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}
+      propertyPath: m_TagString
       value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 8418200817223944222, guid: 644f125c265a94be0896b72ec4c04e7d, type: 3}

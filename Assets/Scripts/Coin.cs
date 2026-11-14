@@ -1,7 +1,6 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Coin : MonoBehaviour
 {
@@ -14,6 +13,15 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(0, _coinRotationSpeed * Time.deltaTime,0);
+        transform.Rotate(0, _coinRotationSpeed * Time.deltaTime, 0);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ghost"))
+        {
+            DataContainer.Coins++;
+            Destroy(gameObject);
+        }
     }
 }
