@@ -1,16 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class GhostScript : MonoBehaviour
 {
     private Animator _anim;
-    private CharacterController _ctrl;
+    private CharacterController _characterController;
 
     private Vector3 _moveDirection = Vector3.zero;
+    private Vector3 _startPosition;
+    private Quaternion _startRotation;
 
-    // Cache hash values
     private static readonly int IdleState = Animator.StringToHash("Base Layer.idle");
     private static readonly int MoveState = Animator.StringToHash("Base Layer.move");
     private static readonly int SurprisedState = Animator.StringToHash("Base Layer.surprised");
@@ -19,38 +21,40 @@ public class GhostScript : MonoBehaviour
 
     private static readonly int AttackTag = Animator.StringToHash("Attack");
 
-    // dissolve
     [FormerlySerializedAs("MeshR")] [SerializeField]
     private SkinnedMeshRenderer[] meshR;
 
     private float _dissolveValue = 1;
     private bool _dissolveFlg;
-    private const int MaxHp = 3;
-    private int _hp = MaxHp;
-    private Text _hpText;
 
-    // moving speed
+  private bool _wasMoving;
+
+    private const int Dissolve = 1;
+    private const int Attack = 2;
+    private const int Surprised = 3;
+
+    private static bool Held(KeyCode arrow, KeyCode wasd) => Input.GetKey(arrow) || Input.GetKey(wasd);
+
     [FormerlySerializedAs("Speed")] [SerializeField]
     private float speed = 4;
 
     void Start()
     {
         _anim = this.GetComponent<Animator>();
-        _ctrl = this.GetComponent<CharacterController>();
-        //         _hpText.text = "HP " + _hp.ToString();
+        _characterController = this.GetComponent<CharacterController>();
+        
+        _startPosition = this.transform.position;
+        _startRotation = this.transform.rotation;
     }
 
     void Update()
     {
         Status();
         Gravity();
-        Respawn();
-        // this character status
         if (!_playerStatus.ContainsValue(true))
         {
             Move();
-            PlayerAttack();
-            Damage();
+            // PlayerAttack();
         }
         else if (_playerStatus.ContainsValue(true))
         {
@@ -70,33 +74,13 @@ public class GhostScript : MonoBehaviour
             }
             else if (statusName == Attack)
             {
-                PlayerAttack();
+                // PlayerAttack();
             }
             else if (statusName == Surprised)
             {
-                // nothing method
             }
         }
-
-        // Dissolve
-        if (_hp <= 0 && !_dissolveFlg)
-        {
-            _anim.CrossFade(DissolveState, 0.1f, 0, 0);
-            _dissolveFlg = true;
-        }
-        // processing at respawn
-        else if (_hp == MaxHp && _dissolveFlg)
-        {
-            _dissolveFlg = false;
-        }
     }
-
-    //---------------------------------------------------------------------
-    // character status
-    //---------------------------------------------------------------------
-    private const int Dissolve = 1;
-    private const int Attack = 2;
-    private const int Surprised = 3;
 
     private Dictionary<int, bool> _playerStatus = new Dictionary<int, bool>
     {
@@ -105,11 +89,9 @@ public class GhostScript : MonoBehaviour
         { Surprised, false },
     };
 
-    //------------------------------
     private void Status()
     {
-        // during dissolve
-        if (_dissolveFlg && _hp <= 0)
+        if (_dissolveFlg && DataContainer.Hp <= 0)
         {
             _playerStatus[Dissolve] = true;
         }
@@ -118,7 +100,6 @@ public class GhostScript : MonoBehaviour
             _playerStatus[Dissolve] = false;
         }
 
-        // during attacking
         if (_anim.GetCurrentAnimatorStateInfo(0).tagHash == AttackTag)
         {
             _playerStatus[Attack] = true;
@@ -128,7 +109,6 @@ public class GhostScript : MonoBehaviour
             _playerStatus[Attack] = false;
         }
 
-        // during damaging
         if (_anim.GetCurrentAnimatorStateInfo(0).fullPathHash == SurprisedState)
         {
             _playerStatus[Surprised] = true;
@@ -139,7 +119,6 @@ public class GhostScript : MonoBehaviour
         }
     }
 
-    // dissolve shading
     private void PlayerDissolve()
     {
         _dissolveValue -= Time.deltaTime;
@@ -150,25 +129,21 @@ public class GhostScript : MonoBehaviour
 
         if (_dissolveValue <= 0)
         {
-            _ctrl.enabled = false;
+            _characterController.enabled = false;
         }
     }
 
-    // play an animation of Attack
-    private void PlayerAttack()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            _anim.CrossFade(AttackState, 0.1f, 0, 0);
-        }
-    }
+    // private void PlayerAttack()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.A))
+    //     {
+    //         _anim.CrossFade(AttackState, 0.1f, 0, 0);
+    //     }
+    // }
 
-    //---------------------------------------------------------------------
-    // gravity for fall of this character
-    //---------------------------------------------------------------------
     private void Gravity()
     {
-        if (_ctrl.enabled)
+        if (_characterController.enabled)
         {
             if (CheckGrounded())
             {
@@ -179,16 +154,13 @@ public class GhostScript : MonoBehaviour
             }
 
             _moveDirection.y -= 0.1f;
-            _ctrl.Move(_moveDirection * Time.deltaTime);
+            _characterController.Move(_moveDirection * Time.deltaTime);
         }
     }
 
-    //---------------------------------------------------------------------
-    // whether it is grounded
-    //---------------------------------------------------------------------
     private bool CheckGrounded()
     {
-        if (_ctrl.isGrounded && _ctrl.enabled)
+        if (_characterController.isGrounded && _characterController.enabled)
         {
             return true;
         }
@@ -198,49 +170,48 @@ public class GhostScript : MonoBehaviour
         return Physics.Raycast(ray, range);
     }
 
-    //---------------------------------------------------------------------
-    // for slime moving
-    //---------------------------------------------------------------------
+
     private void Move()
     {
-        // velocity
-        if (_anim.GetCurrentAnimatorStateInfo(0).fullPathHash == MoveState)
+        bool up = Held(KeyCode.UpArrow, KeyCode.W);
+        bool down = Held(KeyCode.DownArrow, KeyCode.S);
+        bool right = Held(KeyCode.RightArrow, KeyCode.D);
+        bool left = Held(KeyCode.LeftArrow, KeyCode.A);
+        bool isMoving = up || down || right || left;
+
+        if (isMoving && !_wasMoving)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) &&
-                !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
-                MOVE_Velocity(new Vector3(0, 0, -speed), new Vector3(0, 180, 0));
-            }
-            else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow) &&
-                     !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
-                MOVE_Velocity(new Vector3(0, 0, speed), new Vector3(0, 0, 0));
-            }
-            else if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) &&
-                     !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
-                MOVE_Velocity(new Vector3(speed, 0, 0), new Vector3(0, 90, 0));
-            }
-            else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) &&
-                     !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow))
-            {
-                MOVE_Velocity(new Vector3(-speed, 0, 0), new Vector3(0, 270, 0));
-            }
+            _anim.CrossFade(MoveState, 0.1f, 0, 0);
+        }
+        else if (!isMoving && _wasMoving)
+        {
+            _anim.CrossFade(IdleState, 0.1f, 0, 0);
         }
 
-        KEY_DOWN();
-        KEY_UP();
+        if (up)
+        {
+            MOVE_Velocity(new Vector3(0, 0, -speed), new Vector3(0, 180, 0));
+        }
+        else if (down)
+        {
+            MOVE_Velocity(new Vector3(0, 0, speed), new Vector3(0, 0, 0));
+        }
+        else if (left)
+        {
+            MOVE_Velocity(new Vector3(speed, 0, 0), new Vector3(0, 90, 0));
+        }
+        else if (right)
+        {
+            MOVE_Velocity(new Vector3(-speed, 0, 0), new Vector3(0, 270, 0));
+        }
     }
 
-    //---------------------------------------------------------------------
-    // value for moving
-    //---------------------------------------------------------------------
     private void MOVE_Velocity(Vector3 velocity, Vector3 rot)
     {
         _moveDirection = new Vector3(velocity.x, _moveDirection.y, velocity.z);
-        if (_ctrl.enabled)
+        if (_characterController.enabled)
         {
-            _ctrl.Move(_moveDirection * Time.deltaTime);
+            _characterController.Move(_moveDirection * Time.deltaTime);
         }
 
         _moveDirection.x = 0;
@@ -248,105 +219,52 @@ public class GhostScript : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(rot);
     }
 
-    //---------------------------------------------------------------------
-    // whether arrow key is key down
-    //---------------------------------------------------------------------
-    private void KEY_DOWN()
-    {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            _anim.CrossFade(MoveState, 0.1f, 0, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            _anim.CrossFade(MoveState, 0.1f, 0, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            _anim.CrossFade(MoveState, 0.1f, 0, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            _anim.CrossFade(MoveState, 0.1f, 0, 0);
-        }
-    }
-
-    //---------------------------------------------------------------------
-    // whether arrow key is key up
-    //---------------------------------------------------------------------
-    private void KEY_UP()
-    {
-        if (Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            if (!Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) &&
-                !Input.GetKey(KeyCode.RightArrow))
-            {
-                _anim.CrossFade(IdleState, 0.1f, 0, 0);
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) &&
-                !Input.GetKey(KeyCode.RightArrow))
-            {
-                _anim.CrossFade(IdleState, 0.1f, 0, 0);
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) &&
-                !Input.GetKey(KeyCode.RightArrow))
-            {
-                _anim.CrossFade(IdleState, 0.1f, 0, 0);
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) &&
-                !Input.GetKey(KeyCode.LeftArrow))
-            {
-                _anim.CrossFade(IdleState, 0.1f, 0, 0);
-            }
-        }
-    }
-
-    //---------------------------------------------------------------------
-    // damage
-    //---------------------------------------------------------------------
     private void Damage()
     {
-        // Damaged by outside field.
-        if (Input.GetKeyUp(KeyCode.S))
+        DataContainer.Hp--;
+        if (DataContainer.Hp <= 0)
         {
-            _anim.CrossFade(SurprisedState, 0.1f, 0, 0);
-            _hp--;
+            Death();
+        }
+        else
+        {
+            Respawn();
         }
     }
 
-    //---------------------------------------------------------------------
-    // respawn
-    //---------------------------------------------------------------------
     private void Respawn()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        _characterController.enabled = false;
+        this.transform.position = _startPosition;
+        this.transform.rotation = _startRotation;
+        _characterController.enabled = true;
+
+        _moveDirection = Vector3.zero;
+        _wasMoving = false;
+
+        _dissolveValue = 1;
+        for (int i = 0; i < meshR.Length; i++)
         {
-            // player _hp
-            _hp = MaxHp;
+            meshR[i].material.SetFloat("_Dissolve", _dissolveValue);
+        }
 
-            _ctrl.enabled = false;
-            this.transform.position = Vector3.zero; // player position
-            this.transform.rotation = Quaternion.Euler(Vector3.zero); // player facing
-            _ctrl.enabled = true;
+        _anim.CrossFade(IdleState, 0.1f, 0, 0);
+    }
 
-            // reset Dissolve
-            _dissolveValue = 1;
-            for (int i = 0; i < meshR.Length; i++)
-            {
-                meshR[i].material.SetFloat("_Dissolve", _dissolveValue);
-            }
+    private void Death()
+    {
+        if (DataContainer.Hp <= 0 && !_dissolveFlg)
+        {
+            _anim.CrossFade(DissolveState, 0.1f, 0, 0);
+            _dissolveFlg = true;
+        }
+    }
 
-            // reset animation
-            _anim.CrossFade(IdleState, 0.1f, 0, 0);
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Lava"))
+        {
+            Damage();
         }
     }
 }

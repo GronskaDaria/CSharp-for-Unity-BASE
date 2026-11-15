@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class RewardSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Coin[] coins;
+    private UIController _uiController;
+    
+    private void Start()
     {
-        
+        _uiController = FindFirstObjectByType<UIController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddCoin()
     {
-        
+        DataContainer.Coins++;
+
+        if (DataContainer.Coins >= coins.Length)
+        {
+            _uiController.FinishSuccessGame();
+        }
     }
 }
