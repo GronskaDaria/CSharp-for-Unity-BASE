@@ -5,12 +5,18 @@ using Unity.UI;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private TMP_Text coinsText;
-    [SerializeField] private TMP_Text livesText;
-
+    [SerializeField] private TMP_Text hpText;
+    [SerializeField] private GameObject finishSuccessUi;
+    
     void Update()
     {
         coinsText.text = DataContainer.Coins.ToString();
-        livesText.text = DataContainer.Lives.ToString();
+        hpText.text = DataContainer.Hp.ToString();
 
+    }
+    
+    public void FinishSuccessGame()
+    {
+        finishSuccessUi.gameObject.SetActive(true);
     }
 }

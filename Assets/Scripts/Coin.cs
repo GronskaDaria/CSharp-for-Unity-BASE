@@ -5,9 +5,11 @@ using Random = UnityEngine.Random;
 public class Coin : MonoBehaviour
 {
     private float _coinRotationSpeed;
+    private RewardSystem _rewardSystem;
 
     void Start()
     {
+        _rewardSystem = GetComponentInParent<RewardSystem>();
         _coinRotationSpeed = Random.Range(100, 200);
     }
 
@@ -20,7 +22,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Ghost"))
         {
-            DataContainer.Coins++;
+            _rewardSystem.AddCoin();
             Destroy(gameObject);
         }
     }

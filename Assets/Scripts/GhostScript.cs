@@ -10,6 +10,8 @@ public class GhostScript : MonoBehaviour
     private CharacterController _characterController;
 
     private Vector3 _moveDirection = Vector3.zero;
+    private Vector3 _startPosition;
+    private Quaternion _startRotation;
 
     private static readonly int IdleState = Animator.StringToHash("Base Layer.idle");
     private static readonly int MoveState = Animator.StringToHash("Base Layer.move");
@@ -24,10 +26,12 @@ public class GhostScript : MonoBehaviour
 
     private float _dissolveValue = 1;
     private bool _dissolveFlg;
-    private const int MaxHp = 3;
-    private int _hp = MaxHp;
-    private Text _hpText;
-    private bool _wasMoving;
+
+  private bool _wasMoving;
+
+    private const int Dissolve = 1;
+    private const int Attack = 2;
+    private const int Surprised = 3;
 
     private static bool Held(KeyCode arrow, KeyCode wasd) => Input.GetKey(arrow) || Input.GetKey(wasd);
 
@@ -38,19 +42,19 @@ public class GhostScript : MonoBehaviour
     {
         _anim = this.GetComponent<Animator>();
         _characterController = this.GetComponent<CharacterController>();
-        //         _hpText.text = "HP " + _hp.ToString();
+        
+        _startPosition = this.transform.position;
+        _startRotation = this.transform.rotation;
     }
 
     void Update()
     {
         Status();
         Gravity();
-        Respawn();
         if (!_playerStatus.ContainsValue(true))
         {
             Move();
             // PlayerAttack();
-            Damage();
         }
         else if (_playerStatus.ContainsValue(true))
         {
@@ -76,21 +80,7 @@ public class GhostScript : MonoBehaviour
             {
             }
         }
-
-        if (_hp <= 0 && !_dissolveFlg)
-        {
-            _anim.CrossFade(DissolveState, 0.1f, 0, 0);
-            _dissolveFlg = true;
-        }
-        else if (_hp == MaxHp && _dissolveFlg)
-        {
-            _dissolveFlg = false;
-        }
     }
-
-    private const int Dissolve = 1;
-    private const int Attack = 2;
-    private const int Surprised = 3;
 
     private Dictionary<int, bool> _playerStatus = new Dictionary<int, bool>
     {
@@ -101,7 +91,7 @@ public class GhostScript : MonoBehaviour
 
     private void Status()
     {
-        if (_dissolveFlg && _hp <= 0)
+        if (_dissolveFlg && DataContainer.Hp <= 0)
         {
             _playerStatus[Dissolve] = true;
         }
@@ -229,28 +219,52 @@ public class GhostScript : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(rot);
     }
 
-   private void Damage()
+    private void Damage()
     {
+        DataContainer.Hp--;
+        if (DataContainer.Hp <= 0)
+        {
+            Death();
+        }
+        else
+        {
+            Respawn();
+        }
     }
 
     private void Respawn()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        _characterController.enabled = false;
+        this.transform.position = _startPosition;
+        this.transform.rotation = _startRotation;
+        _characterController.enabled = true;
+
+        _moveDirection = Vector3.zero;
+        _wasMoving = false;
+
+        _dissolveValue = 1;
+        for (int i = 0; i < meshR.Length; i++)
         {
-            _hp = MaxHp;
+            meshR[i].material.SetFloat("_Dissolve", _dissolveValue);
+        }
 
-            _characterController.enabled = false;
-            this.transform.position = Vector3.zero;
-            this.transform.rotation = Quaternion.Euler(Vector3.zero);
-            _characterController.enabled = true;
+        _anim.CrossFade(IdleState, 0.1f, 0, 0);
+    }
 
-            _dissolveValue = 1;
-            for (int i = 0; i < meshR.Length; i++)
-            {
-                meshR[i].material.SetFloat("_Dissolve", _dissolveValue);
-            }
+    private void Death()
+    {
+        if (DataContainer.Hp <= 0 && !_dissolveFlg)
+        {
+            _anim.CrossFade(DissolveState, 0.1f, 0, 0);
+            _dissolveFlg = true;
+        }
+    }
 
-            _anim.CrossFade(IdleState, 0.1f, 0, 0);
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Lava"))
+        {
+            Damage();
         }
     }
 }
