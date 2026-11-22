@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GhostScript : MonoBehaviour
 {
     private Animator _anim;
+    private UIController _uiController;
     private CharacterController _characterController;
 
     private Vector3 _moveDirection = Vector3.zero;
@@ -42,6 +43,7 @@ public class GhostScript : MonoBehaviour
     {
         _anim = this.GetComponent<Animator>();
         _characterController = this.GetComponent<CharacterController>();
+        _uiController = FindFirstObjectByType<UIController>();
         
         _startPosition = this.transform.position;
         _startRotation = this.transform.rotation;
@@ -127,9 +129,14 @@ public class GhostScript : MonoBehaviour
             meshR[i].material.SetFloat("_Dissolve", _dissolveValue);
         }
 
-        if (_dissolveValue <= 0)
+        if (_dissolveValue <= 0 && _characterController.enabled)
         {
             _characterController.enabled = false;
+
+            if (_uiController != null)
+            {
+                _uiController.FinishFailGame();
+            }
         }
     }
 
@@ -204,6 +211,8 @@ public class GhostScript : MonoBehaviour
         {
             MOVE_Velocity(new Vector3(-speed, 0, 0), new Vector3(0, 270, 0));
         }
+
+        _wasMoving = isMoving;
     }
 
     private void MOVE_Velocity(Vector3 velocity, Vector3 rot)
@@ -221,6 +230,11 @@ public class GhostScript : MonoBehaviour
 
     private void Damage()
     {
+        if (DataContainer.Hp <= 0)
+        {
+            return;
+        }
+
         DataContainer.Hp--;
         if (DataContainer.Hp <= 0)
         {

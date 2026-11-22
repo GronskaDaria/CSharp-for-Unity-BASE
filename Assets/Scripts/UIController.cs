@@ -7,6 +7,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private TMP_Text coinsText;
     [SerializeField] private TMP_Text hpText;
     [SerializeField] private GameObject finishSuccessUi;
+    [SerializeField] private GameObject finishFailUi;
     
     void Update()
     {
@@ -17,6 +18,17 @@ public class UIController : MonoBehaviour
     
     public void FinishSuccessGame()
     {
-        finishSuccessUi.gameObject.SetActive(true);
+        finishSuccessUi.SetActive(true);
+    }
+
+    public void FinishFailGame()
+    {
+        if (finishFailUi == null)
+        {
+            Debug.LogWarning("UIController: finishFailUi is not assigned in the Inspector.");
+            return;
+        }
+
+        finishFailUi.SetActive(true);
     }
 }
