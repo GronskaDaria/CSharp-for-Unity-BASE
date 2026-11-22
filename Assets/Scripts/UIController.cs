@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Unity.UI;
 
 public class UIController : MonoBehaviour
@@ -10,6 +11,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject finishFailUi;
     [SerializeField] private TMP_Text successScoreText;
     [SerializeField] private TMP_Text failScoreText;
+    [SerializeField] private string mainMenuScene = "MainMenu";
 
     void Update()
     {
@@ -34,6 +36,16 @@ public class UIController : MonoBehaviour
 
         ShowScore(failScoreText);
         finishFailUi.SetActive(true);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(mainMenuScene);
     }
 
     private void ShowScore(TMP_Text scoreText)
