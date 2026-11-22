@@ -39,6 +39,13 @@ public class GhostScript : MonoBehaviour
     [FormerlySerializedAs("Speed")] [SerializeField]
     private float speed = 4;
 
+    [SerializeField] private float damageCooldown = 1f;
+    private float _lastDamageTime = float.NegativeInfinity;
+
+    private const string LavaTag = "Lava";
+    private const float LavaCheckHeight = 0.1f;
+    private const float LavaCheckDistance = 0.3f;
+
     void Start()
     {
         _anim = this.GetComponent<Animator>();
@@ -53,6 +60,7 @@ public class GhostScript : MonoBehaviour
     {
         Status();
         Gravity();
+        CheckLavaUnderneath();
         if (!_playerStatus.ContainsValue(true))
         {
             Move();
@@ -228,13 +236,35 @@ public class GhostScript : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(rot);
     }
 
-    private void Damage()
+    private void CheckLavaUnderneath()
     {
-        if (DataContainer.Hp <= 0)
+        if (!_characterController.enabled)
         {
             return;
         }
 
+        Vector3 origin = this.transform.position + Vector3.up * LavaCheckHeight;
+        if (Physics.Raycast(origin, Vector3.down, out RaycastHit hit, LavaCheckDistance,
+                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide)
+            && hit.collider.CompareTag(LavaTag))
+        {
+            Damage();
+        }
+    }
+
+    private bool IsInvulnerable()
+    {
+        return Time.time - _lastDamageTime < damageCooldown;
+    }
+
+    private void Damage()
+    {
+        if (DataContainer.Hp <= 0 || IsInvulnerable())
+        {
+            return;
+        }
+
+        _lastDamageTime = Time.time;
         DataContainer.Hp--;
         if (DataContainer.Hp <= 0)
         {
@@ -276,7 +306,7 @@ public class GhostScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Lava"))
+        if (other.CompareTag(LavaTag))
         {
             Damage();
         }
