@@ -36186,6 +36186,8 @@ MonoBehaviour:
   hpText: {fileID: 1979869794}
   finishSuccessUi: {fileID: 1760403210}
   finishFailUi: {fileID: 928091579}
+  successScoreText: {fileID: 3680490}
+  failScoreText: {fileID: 71539645}
 --- !u!114 &1732704043 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4049693442936432412, guid: c122b8e20cd715e4493e9462e7bdec85, type: 3}
