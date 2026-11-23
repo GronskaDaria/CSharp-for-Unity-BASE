@@ -3,20 +3,18 @@ using UnityEngine;
 public class RewardSystem : MonoBehaviour
 {
     [SerializeField] private Coin[] coins;
-    private UIController _uiController;
-    
-    private void Start()
+
+    public int TotalCoins => coins != null ? coins.Length : 0;
+
+    public bool AllCoinsCollected => DataContainer.Coins >= TotalCoins;
+
+    private void Awake()
     {
-        _uiController = FindFirstObjectByType<UIController>();
+        DataContainer.ResetData();
     }
 
     public void AddCoin()
     {
         DataContainer.Coins++;
-
-        if (DataContainer.Coins >= coins.Length)
-        {
-            _uiController.FinishSuccessGame();
-        }
     }
 }

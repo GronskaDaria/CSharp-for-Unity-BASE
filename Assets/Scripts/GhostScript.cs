@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GhostScript : MonoBehaviour
 {
     private Animator _anim;
+    private UIController _uiController;
     private CharacterController _characterController;
 
     private Vector3 _moveDirection = Vector3.zero;
@@ -38,10 +39,18 @@ public class GhostScript : MonoBehaviour
     [FormerlySerializedAs("Speed")] [SerializeField]
     private float speed = 4;
 
+    [SerializeField] private float damageCooldown = 1f;
+    private float _lastDamageTime = float.NegativeInfinity;
+
+    private const string LavaTag = "Lava";
+    private const float LavaCheckHeight = 0.1f;
+    private const float LavaCheckDistance = 0.3f;
+
     void Start()
     {
         _anim = this.GetComponent<Animator>();
         _characterController = this.GetComponent<CharacterController>();
+        _uiController = FindFirstObjectByType<UIController>();
         
         _startPosition = this.transform.position;
         _startRotation = this.transform.rotation;
@@ -51,6 +60,7 @@ public class GhostScript : MonoBehaviour
     {
         Status();
         Gravity();
+        CheckLavaUnderneath();
         if (!_playerStatus.ContainsValue(true))
         {
             Move();
@@ -127,9 +137,14 @@ public class GhostScript : MonoBehaviour
             meshR[i].material.SetFloat("_Dissolve", _dissolveValue);
         }
 
-        if (_dissolveValue <= 0)
+        if (_dissolveValue <= 0 && _characterController.enabled)
         {
             _characterController.enabled = false;
+
+            if (_uiController != null)
+            {
+                _uiController.FinishFailGame();
+            }
         }
     }
 
@@ -204,6 +219,8 @@ public class GhostScript : MonoBehaviour
         {
             MOVE_Velocity(new Vector3(-speed, 0, 0), new Vector3(0, 270, 0));
         }
+
+        _wasMoving = isMoving;
     }
 
     private void MOVE_Velocity(Vector3 velocity, Vector3 rot)
@@ -219,8 +236,35 @@ public class GhostScript : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(rot);
     }
 
+    private void CheckLavaUnderneath()
+    {
+        if (!_characterController.enabled)
+        {
+            return;
+        }
+
+        Vector3 origin = this.transform.position + Vector3.up * LavaCheckHeight;
+        if (Physics.Raycast(origin, Vector3.down, out RaycastHit hit, LavaCheckDistance,
+                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide)
+            && hit.collider.CompareTag(LavaTag))
+        {
+            Damage();
+        }
+    }
+
+    private bool IsInvulnerable()
+    {
+        return Time.time - _lastDamageTime < damageCooldown;
+    }
+
     private void Damage()
     {
+        if (DataContainer.Hp <= 0 || IsInvulnerable())
+        {
+            return;
+        }
+
+        _lastDamageTime = Time.time;
         DataContainer.Hp--;
         if (DataContainer.Hp <= 0)
         {
@@ -262,7 +306,7 @@ public class GhostScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Lava"))
+        if (other.CompareTag(LavaTag))
         {
             Damage();
         }
