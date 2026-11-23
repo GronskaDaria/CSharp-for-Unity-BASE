@@ -6,13 +6,13 @@ public static class DataContainer
 
     public static int Coins;
     public static int Hp = StartHp;
+    public static bool HasKey;
 
-    // Static fields survive scene reloads (and Play Mode restarts when Domain Reload is disabled),
-    // so they have to be reset explicitly when a level starts.
     public static void ResetData()
     {
         Coins = 0;
         Hp = StartHp;
+        HasKey = false;
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
